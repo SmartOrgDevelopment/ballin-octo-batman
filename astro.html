@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Astro · Bootstrap</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- Le styles -->
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+<link href="assets/css/docs.css" rel="stylesheet">
+<link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+<!-- Le fav and touch icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="assets/ico/favicon.png">
+<style>
+  #content {
+    float:left;
+  }
+  #maincont{
+      margin-top: 42px;
+  }
+  #toggleSidebar {
+      float:left;
+      color:#779DD7;
+      padding:2px 4px;
+  }
+  #sidebar{
+      float:left;   
+  }
+ 
+</style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js" style=""></script>
+<script type="text/javascript">//<![CDATA[ 
+$(window).load(function(){
+  $.asm = {};
+  $.asm.panels = 2;
+  function sidebarLeft(panels) {
+      $.asm.panels = panels;
+      if (panels === 1) {
+        $('#content').removeClass('span6');
+        $('#content').addClass('span8 no-sidebar');
+        $('#sidebar1').hide();
+      } else if (panels === 2) {
+        $('#content').removeClass('span8 no-sidebar');
+        $('#content').addClass('span6');
+        $('#sidebar1').show();
+        $('#sidebar1').height($(window).height() - 50);
+      }
+  };
+  function sidebarRight(panels) {
+      $.asm.panels = panels;
+      if (panels === 1) {
+        $('#content').removeClass('span6');
+        $('#content').addClass('span8 no-sidebar');
+        $('#sidebar2').hide();
+      } else if (panels === 2) {
+        $('#content').removeClass('span8 no-sidebar');
+        $('#content').addClass('span6');
+        $('#sidebar2').show();
+        $('#sidebar2').height($(window).height() - 50);
+      }
+  };
+  $('#toggleSidebar1').click(function() {
+    if ($.asm.panels === 1) {
+      $('#toggleSidebar1 i').addClass('icon-chevron-left');
+      $('#toggleSidebar1 i').removeClass('icon-chevron-right');
+      return sidebarLeft(2);
+    } else {
+      $('#toggleSidebar1 i').removeClass('icon-chevron-left');
+      $('#toggleSidebar1 i').addClass('icon-chevron-right');
+      return sidebarLeft(1);
+    }
+  });
+  $('#toggleSidebar2').click(function() {
+    if ($.asm.panels === 1) {
+      $('#toggleSidebar2 i').addClass('icon-chevron-right');
+      $('#toggleSidebar2 i').removeClass('icon-chevron-left');
+      return sidebarRight(2);
+    } else {
+      $('#toggleSidebar2 i').removeClass('icon-chevron-right');
+      $('#toggleSidebar2 i').addClass('icon-chevron-left');
+      return sidebarRight(1);
+    }
+  });
+});//]]>  
+$(document).ready(function() {
+    //$(".toggle-content").hide();
+    $(".toggle-title").click(function() {
+        $(this).next(".toggle-content").slideToggle("normal");
+        $(this).toggleClass('active'); //toggle class active
+    });
+});
+</script>
+</head>
+<body data-spy="scroll" data-target=".bs-docs-sidebar">
+<!-- Navbar
+    ================================================== -->
+<main role="main" id="main">
+<div class="navbar navbar-fixed-top active">
+  <div class="navbar-inner" style="width: auto;">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#"><b>ASTRO</b></a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+          <li class="">
+          <a href="">Portfolio</a>
+          </li>
+          <li class="">
+          <a href="">Admin</a>
+          </li>
+          <li class="">
+          <a href="">Help</a>
+          </li>
+          <li class="">
+          <a href="">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <!-- Left Nav
+    ================================================== -->
+  <div class="row-fluid">
+    <div id="sidebar1" class="span3 bs-docs-sidebar">
+      <section id="collapse">
+      <!-- Collapse
+          ================================================== -->
+      <div class="accordion" id="accordion-left">
+        <div class="accordion-group">
+          <div class="accordion-heading active">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion-left" href="#collapseOne">
+            <b>Navigation</b></a>
+          </div>
+          <div id="collapseOne" class="accordion-body collapse in">
+            <div class="accordion-inner">
+              <b>Company Portfolio</b>
+              <ul id="files" class="nav">
+                <li><a href="">R&amp;D 2013</a></li>
+                <ul>
+                  <li><a href="#">USA</a></li>
+                  <ul>
+                    <li><a href="#">Atomic Cooker</a></li>
+                    <li><a href="#">Solar Cooker</a></li>
+                  </ul>
+                  <li><a href="#">Asia</a></li>
+                  <ul>
+                    <li><a href="#">Electric Cooker</a></li>
+                  </ul>
+                  <li><a href="#">Europe</a></li>
+                </ul>
+                <li><a href="">R&amp;D 2012</a></li>
+                <ul>
+                  <li><a href="#">USA</a></li>
+                  <ul>
+                    <li><a href="#">Atomic Cooker</a></li>
+                  </ul>
+                  <li><a href="#">Asia</a></li>
+                  <ul>
+                    <li><a href="#">Electric Cooker</a></li>
+                  </ul>
+                  <li><a href="#">Europe</a></li>
+                  <ul>
+                    <li><a href="#">Electric Cooker</a></li>
+                    <li><a href="#">Slow Cooker</a></li>
+                  </ul>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">
+                    <!--omit data-parent="#accordion-left" to avoid the collapse-->
+                    <b>Select</b></a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      <div id="labels-badges">
+                        <code>tags</code>
+                        <code>tags</code>
+                        <code>tags</code>
+                        <code>tags</code>
+                        <code>tags</code>
+                        <code>tags</code>
+                      </div>
+                    </div>
+                    </section>
+                    
+                  </div>
+                
+                  <!-- Tables
+        ================================================== -->
+                  <div id="content" class="span6">
+                    <a id="toggleSidebar1" href="#" class="toggles"><i class="icon-chevron-left"></i></a>
+                    <a id="toggleSidebar2" href="#" class="toggles"><i class="icon-chevron-right"></i></a>
+                    <section id="tables">
+                    <img src="../img/compareValue.png"/>
+                    <p/>
+                    <div>
+                      <center>
+                      <table class="table table-striped table-bordered table-condensed table-nonfluid" align="center">
+                      <tbody>
+                      <tr>
+                        <th>
+                          <b>Portfolio Elements</b>
+                        </th>
+                        <th>
+                          <b>Expected Value</b>
+                        </th>
+                      </tr>
+                      <tr>
+                        <td>
+                          Breath Strips
+                        </td>
+                        <td>
+                          54.43
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Shoe Inserts
+                        </td>
+                        <td>
+                          0.32
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Flushables
+                        </td>
+                        <td>
+                          1.57
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Pocket Pals
+                        </td>
+                        <td>
+                          4.46
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Breath Strips Super
+                        </td>
+                        <td>
+                          54.43
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Oven
+                        </td>
+                        <td>
+                          3.26
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Range Top
+                        </td>
+                        <td>
+                          0.17
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Freezer
+                        </td>
+                        <td>
+                          1.58
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Energy Efficient Refrigerator
+                        </td>
+                        <td>
+                          -0.11
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Zip Shoes
+                        </td>
+                        <td>
+                          50.53
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Cubic Balls
+                        </td>
+                        <td>
+                          34.53
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Super Tee
+                        </td>
+                        <td>
+                          2.56
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Auto Bowl
+                        </td>
+                        <td>
+                          0.00
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="table-totals-cell" style="background-color:#606060; color:#FFFFFF">
+                          Totals
+                        </td>
+                        <td class="table-totals-cell" style="background-color:#606060; color:#FFFFFF">
+                          207.73
+                        </td>
+                      </tr>
+                      </tbody>
+                      </table>
+                      </center>
+                    </div>
+
+                    </section>
+                  </div>
+                  <!-- Left Nav
+    ================================================== -->
+                  <div id="sidebar2" class="span3">
+                    <div class="row-fluid">
+                      <section id="collapse">
+                      <!-- Collapse
+          ================================================== -->
+                      
+                      <div class="accordion" id="rtAccordion1">
+                        <div class="accordion-group">
+                          <div class="accordion-heading">
+                            <a class="accordion-toggle" data-toggle="collapse" data-parent="#rtAccordion1" href="#rtCollapseOne">
+                            <b>Manage</b></a>
+                          </div>
+                          <div id="rtCollapseOne" class="accordion-body collapse in">
+                            <div class="accordion-inner">
+                              <ul id="files" class="nav nav-list">
+                                <li><a href="">Tags</a></li>
+                                <li><a href="">Shared Data</a></li>
+                              </ul>
+                            </div>
+                            <div class="accordion-group">
+                              <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#rtAccordion2" href="#rtCollapseTwo">
+                                <b>Actions</b></a>
+                              </div>
+                              <div id="rtCollapseTwo" class="accordion-body in">
+                                <div class="accordion-inner">
+                                  <ul id="files" class="nav nav-list">
+                                    <li><a href="">Compare Market Uncertainty</a></li>
+                                    <li class="active"><a href="">Compare Value</a></li>
+                                    <li><a href="">Compare Dev Uncertainty</a></li>
+                                    <li><a href="">Innovation Screen</a></li>
+                                    <li><a href="">CFO Chart</a></li>
+                                    <li><a href="">Expected P&amp;L</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    
+                      <!-- Le javascript
+    ================================================== -->
+                      <!-- Placed at the end of the document so the pages load faster -->
+                      <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                      <script src="assets/js/jquery.js"></script>
+                      <script src="assets/js/bootstrap-transition.js"></script>
+                      <script src="assets/js/bootstrap-alert.js"></script>
+                      <script src="assets/js/bootstrap-modal.js"></script>
+                      <script src="assets/js/bootstrap-dropdown.js"></script>
+                      <script src="assets/js/bootstrap-scrollspy.js"></script>
+                      <script src="assets/js/bootstrap-tab.js"></script>
+                      <script src="assets/js/bootstrap-tooltip.js"></script>
+                      <script src="assets/js/bootstrap-popover.js"></script>
+                      <script src="assets/js/bootstrap-button.js"></script>
+                      <script src="assets/js/bootstrap-collapse.js"></script>
+                      <script src="assets/js/bootstrap-carousel.js"></script>
+                      <script src="assets/js/bootstrap-typeahead.js"></script>
+                      <script src="assets/js/bootstrap-affix.js"></script>
+                      <script src="assets/js/holder/holder.js"></script>
+                      <script src="assets/js/google-code-prettify/prettify.js"></script>
+                      <script src="assets/js/application.js"></script>
+                      </main>
+                      </body>
+                      </html>

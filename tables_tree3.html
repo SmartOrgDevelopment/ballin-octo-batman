@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Astro · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/docs.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script type="text/javascript">
+			// Run capabilities test
+			enhance({
+				loadScripts: [
+					'https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js',
+					'js/jQuery.tree.js',
+					'js/example.js'
+				],
+				loadStyles: ['css/enhanced.css']	
+			});   
+	    </script>		
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+    <div class="navbar navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="index.html">ASTRO</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="">
+                <a href="">Portfolio</a>
+              </li>
+              <li class="">
+                <a href="">Admin</a>
+              </li>
+              <li class="">
+                <a href="">Help</a>
+              </li>
+              <li class="">
+                <a href="">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  <div class="container-fluid">
+
+    <!-- Left Nav
+    ================================================== -->
+   <div class="row-fluid">
+     <div class="span3">
+        <section id="collapse">
+     <!-- Collapse
+          ================================================== -->
+              <div class="accordion" id="accordion2">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                      Navigation
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      <pre>Company Portfolio</pre>
+		<ul id="files">
+		<li><a href="">R&D 2013</a></li>
+				<ul>
+					<li><a href="#">USA</a></li>
+					<ul>
+					<li><a href="#">Atomic Cooker</a></li>
+					<li><a href="#">Solar Cooker</a></li>
+					</ul>
+					<li><a href="#">Asia</a></li>
+					<ul>
+					<li><a href="#">Electric Cooker</a></li>
+					</ul>
+					<li><a href="#">Europe</a></li>
+					</ul>			
+				
+		<li><a href="">R&D 2012</a></li>
+		
+				<ul>
+					<li><a href="#">USA</a></li>
+					<ul>
+					<li><a href="#">Atomic Cooker</a></li>
+					</ul>
+					<li><a href="#">Asia</a></li>
+					<ul>
+					<li><a href="#">Electric Cooker</a></li>
+					</ul>
+					<li><a href="#">Europe</a></li>
+					<ul>
+					<li><a href="#">Electric Cooker</a></li>
+					<li><a href="#">Slow Cooker</a></li>
+					</ul>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" href="#collapseTwo">
+                    <!--omit data-parent="#accordion2" to avoid the collapse-->
+                      Select
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                    <div id="labels-badges">
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     </div>
+                    </div>
+                
+                <!--<div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                      Collapsible Group Item #3
+                    </a>
+                  </div>
+                  <div id="collapseThree" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+                </div>-->
+              </section>
+              </div>
+
+            
+     <!-- <div class="sidebar-nav-fixed">
+          <div class="content">
+        <div class="nav nav-list bs-docs-sidenav">
+          <pre>Navigation</pre>
+Company Portfolio
+		<ul id="files">
+		<li><a href="">R&D 2013</a></li>
+				<ul>
+					<li><a href="#">USA</a></li>
+					<ul>
+					<li><a href="#">Atomic Cooker</a></li>
+					<li><a href="#">Solar Cooker</a></li>
+					</ul>
+					<li><a href="#">Asia</a></li>
+					<ul>
+					<li><a href="#">Electric Cooker</a></li>
+					</ul>
+					<li><a href="#">Europe</a></li>
+					</ul>
+			</div>	
+				<ul id="files">
+		<li><a href="">R&D 2013</a></li>
+				<ul>
+					<li><a href="#">USA</a></li>
+					<ul>
+					<li><a href="#">Atomic Cooker</a></li>
+					</ul>
+					<li><a href="#">Asia</a></li>
+					<ul>
+					<li><a href="#">Electric Cooker</a></li>
+					</ul>
+					<li><a href="#">Europe</a></li>
+					</ul>
+					</div>
+<div class="nav nav-list bs-docs-sidenav">
+          Select
+      </div>
+      </div>
+      </div>-->
+ 
+       <!-- Tables
+        ================================================== -->
+      <div class="span6">
+        <section id="tables">
+          <!--<div class="page-header">
+            <h1>Tables</h1>
+          </div>-->
+
+          <h2>Default styles</h2>
+          <p>For basic styling&mdash;light padding and only horizontal dividers&mdash;add the base class <code>.table</code> to any <code>&lt;table&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums">
+&lt;table class="table"&gt;
+  …
+&lt;/table&gt;
+</pre>
+
+
+          <hr class="bs-docs-separator">
+
+
+
+          <h3><code>.table-bordered</code></h3>
+          <p>Add borders and rounded corners to the table.</p>
+          <div class="bs-docs-example">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="2">1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums">
+&lt;table class="table table-bordered"&gt;
+  …
+&lt;/table&gt;
+</pre>
+
+          <h3><code>.table-hover</code></h3>
+          <p>Enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+          <div class="bs-docs-example">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+<pre class="prettyprint linenums" style="margin-bottom: 18px;">
+&lt;table class="table table-hover"&gt;
+  …
+&lt;/table&gt;
+</pre>
+
+          <h3><code>.table-condensed</code></h3>
+          <p>Makes tables more compact by cutting cell padding in half.</p>
+          <div class="bs-docs-example">
+            <table class="table table-condensed">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td colspan="2">Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </section>
+</div>
+
+<!-- Left Nav
+    ================================================== -->
+   <div class="row-fluid">
+     <div class="span3">
+        <section id="collapse">
+     <!-- Collapse
+          ================================================== -->
+              <div class="accordion" id="accordion3">
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                      Actions
+                    </a>
+                  </div>
+                  <div id="collapseOne" class="accordion-body collapse in">
+                    <div class="accordion-inner">
+                      <pre>Manage</pre>
+		<ul id="files">
+		<li><a href="">Tags</a></li>
+		
+				
+		<li><a href="">Share Data</a></li>
+		</ul>
+                </div>
+                <div class="accordion-group">
+                  <div class="accordion-heading">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapseThree">
+                      Actions
+                    </a>
+                  </div>
+                  <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-inner">
+                    <div id="labels-badges">
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     <code>tags</code>
+                     </div>
+                    </div>
+   
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+    <script src="assets/js/bootstrap-affix.js"></script>
+
+    <script src="assets/js/holder/holder.js"></script>
+    <script src="assets/js/google-code-prettify/prettify.js"></script>
+
+    <script src="assets/js/application.js"></script>
+
+
+  </body>
+</html>
