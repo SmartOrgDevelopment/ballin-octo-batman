@@ -187,15 +187,23 @@ $(document).ready(function() {
       <a class="brand" href="#"><b>ASTRO</b></a>
       <div class="nav-collapse collapse">
         <ul class="nav">
-          <li class="active">
-          <a href="">Navigation</a>
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">View <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li class="active"><a href="#">Navigation</a></li>
+                <li class="active"><a href="#">Actions</a></li>
+              </ul>
           </li>
-          <li class="active">
-          <a href="">Actions</a>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sales Forecast</a></li>
+              <li><a href="#">Company Portfolio</a></li>
+              <li><a href="#">Product Portfolio</a></li>
+            </ul>
           </li>
-          <li class="">
-          <a href="">Portfolio</a>
-          </li>
+          
+          
           <li class="">
           <a href="">Admin</a>
           </li>
